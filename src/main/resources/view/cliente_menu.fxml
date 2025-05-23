@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns="http://javafx.com/javafx/8.0.171"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.ClienteController"
+      stylesheets="@/styles.css">
+
+    <Label fx:id="welcomeLabel" styleClass="titulo"/>
+
+    <TableView fx:id="incidenciasTable">
+        <columns>
+            <TableColumn text="ID" fx:id="idCol" styleClass="columna-cabecera"/>
+            <TableColumn text="Descripción" fx:id="descCol" styleClass="columna-cabecera"/>
+            <TableColumn text="Estado" fx:id="estadoCol" styleClass="columna-cabecera"/>
+        </columns>
+    </TableView>
+
+    <HBox spacing="15">
+        <Button text="Nueva Incidencia" onAction="#handleNuevaIncidencia" styleClass="boton-primario"/>
+        <Button text="Actualizar" onAction="#handleActualizar" styleClass="boton-secundario"/>
+        <Button text="Cerrar Sesión" onAction="#handleCerrarSesion" styleClass="boton-peligro"/>
+    </HBox>
+</VBox>

@@ -1,0 +1,115 @@
+/* ===================== ESTILOS GENERALES ===================== */
+.root {
+    -fx-font-family: "Segoe UI";
+    -fx-base: #3498db; /* Color base para componentes */
+}
+
+/* ===================== PALETA DE COLORES ===================== */
+.color-primario {
+    -fx-background-color: #3498db; /* Azul principal */
+    -fx-text-fill: white;
+}
+
+.color-secundario {
+    -fx-background-color: #2ecc71; /* Verde */
+    -fx-text-fill: white;
+}
+
+.color-peligro {
+    -fx-background-color: #e74c3c; /* Rojo error */
+    -fx-text-fill: white;
+}
+
+.color-fondo {
+    -fx-background-color: #f0f0f0; /* Gris claro para fondos */
+}
+
+/* ===================== COMPONENTES COMUNES ===================== */
+/* ---- Títulos ---- */
+.titulo {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50; /* Azul oscuro */
+    -fx-padding: 0 0 15px 0;
+}
+
+/* ---- Botones ---- */
+.boton {
+    -fx-min-width: 100px;
+    -fx-padding: 8px 15px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-border-radius: 4px;
+}
+
+.boton-primario {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+}
+
+.boton-secundario {
+    -fx-background-color: #95a5a6; /* Gris */
+    -fx-text-fill: white;
+}
+
+.boton-peligro {
+    -fx-background-color: #e74c3c;
+    -fx-text-fill: white;
+}
+
+/* ---- Campos de texto ---- */
+.campo-texto {
+    -fx-pref-width: 250px;
+    -fx-padding: 8px;
+    -fx-border-color: #bdc3c7;
+    -fx-border-radius: 4px;
+}
+
+.campo-texto:focused {
+    -fx-border-color: #3498db;
+}
+
+/* ---- Tablas ---- */
+.tabla {
+    -fx-pref-height: 400px;
+    -fx-border-color: #bdc3c7;
+    -fx-border-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 2);
+}
+
+.columna-cabecera {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER;
+}
+
+/* ---- Etiquetas ---- */
+.etiqueta {
+    -fx-font-weight: bold;
+    -fx-text-fill: #34495e; /* Gris oscuro */
+}
+
+/* ===================== VISTAS ESPECÍFICAS ===================== */
+/* ---- Login ---- */
+.formulario-login {
+    -fx-padding: 20px;
+    -fx-background-color: white;
+    -fx-border-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 2);
+}
+
+/* ---- Mensajes de error ---- */
+.mensaje-error {
+    -fx-text-fill: #e74c3c;
+    -fx-font-weight: bold;
+    -fx-graphic: url("error_icon.png");
+}
+
+/* ---- Campos agrupados (Cliente/Técnico) ---- */
+.grupo-campos {
+    -fx-padding: 10px;
+    -fx-border-color: #bdc3c7;
+    -fx-border-radius: 5px;
+    -fx-background-color: #ffffff;
+}

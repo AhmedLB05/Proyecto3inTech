@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns="http://javafx.com/javafx/8.0.171"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.VerIncidenciasController"
+      spacing="15"
+      style="-fx-padding: 20; -fx-background-color: #f0f0f0;"
+      stylesheets="@/styles.css">
+
+    <!-- Título -->
+    <Label text="Todas las Incidencias" styleClass="titulo-seccion"/>
+
+    <!-- Botones de acción -->
+    <HBox spacing="15" alignment="CENTER">
+        <Button text="Actualizar" onAction="#handleActualizar" styleClass="boton-primario"/>
+        <Button text="Volver" onAction="#handleVolver" styleClass="boton-secundario"/>
+    </HBox>
+
+    <!-- Tabla de incidencias -->
+    <TableView fx:id="incidenciasTable" styleClass="tabla-estilizada">
+        <columns>
+            <TableColumn text="Fecha Solución" styleClass="columna-cabecera">
+                <cellValueFactory>
+                    <PropertyValueFactory property="fechaSolucionFormateada"/>
+                </cellValueFactory>
+            </TableColumn>
+            <!-- Columna ID Cliente -->
+            <TableColumn text="ID Cliente" styleClass="columna-cabecera">
+                <cellValueFactory>
+                    <PropertyValueFactory property="idCliente"/>
+                </cellValueFactory>
+            </TableColumn>
+
+            <!-- Columna Solución -->
+            <TableColumn text="Solución" styleClass="columna-cabecera">
+                <cellValueFactory>
+                    <PropertyValueFactory property="solucion"/>
+                </cellValueFactory>
+            </TableColumn>
+
+            <!-- Columna Solucionada -->
+            <TableColumn text="Solucionada" styleClass="columna-cabecera">
+                <cellValueFactory>
+                    <PropertyValueFactory property="solucionadaFormateada"/> <!-- Usar método formateado -->
+                </cellValueFactory>
+            </TableColumn>
+            <!--<TableColumn text="ID" styleClass="columna-cabecera">
+                <cellValueFactory>
+                    <PropertyValueFactory property="id"/>
+                </cellValueFactory>
+            </TableColumn>-->
+            <!--<TableColumn text="Descripción" styleClass="columna-cabecera">
+                <cellValueFactory>
+                    <PropertyValueFactory property="descripcion"/>
+                </cellValueFactory>
+            </TableColumn>-->
+            <!--<TableColumn text="Estado" styleClass="columna-cabecera">
+                <cellValueFactory>
+                    <PropertyValueFactory property="estado"/>
+                </cellValueFactory>
+            </TableColumn>-->
+            <!--<TableColumn text="Técnico" styleClass="columna-cabecera">
+                <cellValueFactory>
+                    <PropertyValueFactory property="idTecnicoAsignado"/>
+                </cellValueFactory>
+            </TableColumn>-->
+            <!--<TableColumn text="Fecha" styleClass="columna-cabecera">
+                <cellValueFactory>
+                    <PropertyValueFactory property="fechaCreacionFormateada"/>
+                </cellValueFactory>
+            </TableColumn>-->
+        </columns>
+    </TableView>
+
+</VBox>

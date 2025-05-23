@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx/8.0.171"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.FormularioUsuarioController"
+      spacing="15"
+      style="-fx-padding: 20; -fx-background-color: #f0f0f0;"
+      stylesheets="@/styles.css"
+      prefWidth="400">
+
+    <!-- Título -->
+    <Label text="Formulario de Usuario" styleClass="titulo-formulario"/>
+
+    <!-- Campos comunes -->
+    <GridPane hgap="10" vgap="10">
+        <columnConstraints>
+            <ColumnConstraints percentWidth="30"/>
+            <ColumnConstraints percentWidth="70"/>
+        </columnConstraints>
+
+        <!-- Tipo de usuario -->
+        <Label text="Tipo de Usuario:" styleClass="etiqueta" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <ComboBox fx:id="tipoUsuarioCombo" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+        <!-- Nombre -->
+        <Label text="Nombre:" styleClass="etiqueta" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <TextField fx:id="nombreField" GridPane.rowIndex="1" GridPane.columnIndex="1" styleClass="campo-texto"/>
+
+        <!-- Apellidos -->
+        <Label text="Apellidos:" styleClass="etiqueta" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <TextField fx:id="apellidosField" GridPane.rowIndex="2" GridPane.columnIndex="1" styleClass="campo-texto"/>
+
+        <!-- Email -->
+        <Label text="Email:" styleClass="etiqueta" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+        <TextField fx:id="emailField" GridPane.rowIndex="3" GridPane.columnIndex="1" styleClass="campo-texto"/>
+
+        <!-- Contraseña -->
+        <Label text="Contraseña:" styleClass="etiqueta" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+        <PasswordField fx:id="passField" GridPane.rowIndex="4" GridPane.columnIndex="1" styleClass="campo-texto"/>
+
+        <!-- Teléfono -->
+        <Label text="Teléfono:" styleClass="etiqueta" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+        <TextField fx:id="telefonoField" GridPane.rowIndex="5" GridPane.columnIndex="1" styleClass="campo-texto"/>
+    </GridPane>
+
+    <!-- Campos para Cliente -->
+    <HBox fx:id="clienteFields" spacing="10" visible="false" styleClass="grupo-campos">
+        <Label text="Dirección:" styleClass="etiqueta"/>
+        <TextField fx:id="direccionField" styleClass="campo-texto" prefWidth="200"/>
+        <Label text="Empresa:" styleClass="etiqueta"/>
+        <TextField fx:id="empresaField" styleClass="campo-texto" prefWidth="150"/>
+    </HBox>
+
+    <!-- Campos para Técnico -->
+    <HBox fx:id="tecnicoFields" spacing="10" visible="false" styleClass="grupo-campos">
+        <Label text="Nivel de Experiencia:" styleClass="etiqueta"/>
+        <TextField fx:id="nivelExpField" styleClass="campo-texto" promptText="Ej: Junior/Senior"/>
+    </HBox>
+
+    <!-- Botones -->
+    <HBox spacing="15" alignment="CENTER">
+        <Button text="Guardar" onAction="#handleGuardar" styleClass="boton-primario"/>
+        <Button text="Cancelar" onAction="#handleCancelar" styleClass="boton-secundario"/>
+    </HBox>
+</VBox>

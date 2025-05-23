@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns="http://javafx.com/javafx/8.0.171"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.AdminController"
+      spacing="10"
+      alignment="CENTER"
+      style="-fx-padding: 20; -fx-background-color: #f0f0f0;"
+      stylesheets="@/styles.css">
+
+    <Label fx:id="welcomeLabel" styleClass="titulo"/>
+    <Button text="Gestionar Usuarios" onAction="#handleGestionUsuarios" styleClass="boton-primario"/>
+    <Button text="Asignar Incidencias" onAction="#handleAsignarIncidencias" styleClass="boton-primario"/>
+    <Button text="Ver Todas las Incidencias" onAction="#handleVerIncidencias" styleClass="boton-primario"/>
+    <Button text="Cerrar Sesión" onAction="#handleLogout" styleClass="boton-secundario"/>
+
+</VBox>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx/8.0.171"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.LoginController"
+      spacing="20"
+      alignment="CENTER"
+      style="-fx-padding: 30; -fx-background-color: #f5f6fa;"
+      stylesheets="@/styles.css">
+
+    <!-- Título -->
+    <Label text="Sistema de Gestión de Incidencias" styleClass="titulo-login"/>
+
+    <!-- Formulario -->
+    <GridPane hgap="15" vgap="15" styleClass="formulario-login">
+        <columnConstraints>
+            <ColumnConstraints prefWidth="100"/>
+            <ColumnConstraints prefWidth="200"/>
+        </columnConstraints>
+
+        <Label text="Email:" styleClass="etiqueta-login" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <TextField fx:id="emailField" promptText="ejemplo@empresa.com" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+        <Label text="Contraseña:" styleClass="etiqueta-login" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <PasswordField fx:id="passwordField" promptText="" GridPane.rowIndex="1"
+                       GridPane.columnIndex="1"/>
+    </GridPane>
+
+    <!-- Botón de Acción -->
+    <Button text="Iniciar Sesión" onAction="#handleLogin" styleClass="boton-login"/>
+
+    <!-- Mensaje de Error -->
+    <Label fx:id="errorLabel" styleClass="mensaje-error" visible="false"/>
+</VBox>

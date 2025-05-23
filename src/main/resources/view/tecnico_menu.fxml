@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns="http://javafx.com/javafx/8.0.171"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.TecnicoController"
+      stylesheets="@/styles.css">
+
+    <Label fx:id="welcomeLabel" styleClass="titulo"/>
+
+    <TableView fx:id="incidenciasTable">
+        <columns>
+            <TableColumn text="ID" fx:id="idCol" styleClass="columna-cabecera"/>
+            <TableColumn text="Descripción" fx:id="descCol" styleClass="columna-cabecera"/>
+            <TableColumn text="Estado" fx:id="estadoCol" styleClass="columna-cabecera"/>
+            <TableColumn text="Cliente" fx:id="clienteCol" styleClass="columna-cabecera">
+                <cellValueFactory>
+                    <PropertyValueFactory property="idCliente"/>
+                </cellValueFactory>
+            </TableColumn>
+            <!-- Nuevas columnas -->
+            <TableColumn text="Solucionada" fx:id="solucionadaCol" styleClass="columna-cabecera">
+                <cellValueFactory>
+                    <PropertyValueFactory property="solucionadaFormateada"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Solución" fx:id="solucionCol" styleClass="columna-cabecera">
+                <cellValueFactory>
+                    <PropertyValueFactory property="solucion"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Fecha Creación" fx:id="fechaCreacionCol" styleClass="columna-cabecera">
+                <cellValueFactory>
+                    <PropertyValueFactory property="fechaCreacionFormateada"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Fecha Solución" fx:id="fechaSolucionCol" styleClass="columna-cabecera">
+                <cellValueFactory>
+                    <PropertyValueFactory property="fechaSolucionFormateada"/>
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+
+    <HBox spacing="15">
+        <Button text="Resolver Incidencia" onAction="#handleResolverIncidencia" styleClass="boton-primario"/>
+        <Button text="Actualizar" onAction="#handleActualizar" styleClass="boton-secundario"/>
+        <Button text="Cerrar Sesión" onAction="#handleCerrarSesion" styleClass="boton-peligro"/>
+    </HBox>
+</VBox>

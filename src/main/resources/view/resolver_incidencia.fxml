@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns="http://javafx.com/javafx/8.0.171"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.ResolverIncidenciaController"
+      spacing="15"
+      style="-fx-padding: 20;"
+      stylesheets="@/styles.css">
+
+    <Label text="Resolver Incidencia" styleClass="titulo-formulario"/>
+
+    <Label fx:id="infoIncidenciaLabel" styleClass="etiqueta"/>
+
+    <!-- Nuevo ComboBox para el estado -->
+    <Label text="Estado:" styleClass="etiqueta"/>
+    <ComboBox fx:id="estadoComboBox" styleClass="combo-box"/>
+
+    <Label text="Solución:" styleClass="etiqueta"/>
+    <TextArea fx:id="solucionTextArea" promptText="Descripción de la solución..."
+              styleClass="campo-texto" prefRowCount="4"/>
+
+    <HBox spacing="15">
+        <Button text="Confirmar" onAction="#handleConfirmar" styleClass="boton-primario"/>
+        <Button text="Cancelar" onAction="#handleCancelar" styleClass="boton-secundario"/>
+    </HBox>
+</VBox>

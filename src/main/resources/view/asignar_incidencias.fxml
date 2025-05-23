@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns="http://javafx.com/javafx/8.0.171"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.AsignarIncidenciasController"
+      spacing="15"
+      alignment="CENTER"
+      style="-fx-padding: 20; -fx-background-color: #f0f0f0;"
+      stylesheets="@/styles.css">
+
+    <!-- Título -->
+    <Label text="Asignación de Incidencias" styleClass="titulo"/>
+
+    <!-- Búsqueda de incidencia -->
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="ID Incidencia:" styleClass="etiqueta-formulario"/>
+        <TextField fx:id="idIncidenciaField" promptText="Ej: i12345" styleClass="campo-texto"/>
+        <Button text="Buscar Incidencia" onAction="#handleBuscarIncidencia" styleClass="boton-secundario"/>
+    </HBox>
+
+    <!-- Búsqueda de técnico -->
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Email Técnico:" styleClass="etiqueta-formulario"/>
+        <TextField fx:id="emailTecnicoField" promptText="Ej: tecnico@empresa.com" styleClass="campo-texto"/>
+        <Button text="Buscar Técnico" onAction="#handleBuscarTecnico" styleClass="boton-secundario"/>
+    </HBox>
+
+    <!-- Botones principales -->
+    <Button text="Asignar Incidencia" onAction="#handleAsignar" styleClass="boton-primario"/>
+    <Button text="Volver" onAction="#handleVolver" styleClass="boton-secundario"/>
+
+    <!-- Mensajes de error/éxito -->
+    <Label fx:id="mensajeLabel" styleClass="mensaje-error"/>
+</VBox>

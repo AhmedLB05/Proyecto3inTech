@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns="http://javafx.com/javafx/8.0.171"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.GestionUsuariosController"
+      spacing="15"
+      style="-fx-padding: 20; -fx-background-color: #f0f0f0;"
+      stylesheets="@/styles.css">
+
+    <Label text="Gestión de Usuarios" styleClass="titulo-formulario"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <TextField fx:id="buscarField" promptText="Buscar por nombre, email..." styleClass="campo-busqueda"/>
+        <Button text="Buscar" onAction="#handleBuscarUsuario" styleClass="boton-secundario"/>
+    </HBox>
+
+    <TableView fx:id="usuariosTable" styleClass="tabla-estilizada">
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID" styleClass="columna-cabecera">
+                <cellValueFactory>
+                    <PropertyValueFactory property="id"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="nombreColumn" text="Nombre" styleClass="columna-cabecera">
+                <cellValueFactory>
+                    <PropertyValueFactory property="nombre"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="apellidosColumn" text="Apellidos" styleClass="columna-cabecera">
+                <cellValueFactory>
+                    <PropertyValueFactory property="apellidos"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="emailColumn" text="Email" styleClass="columna-cabecera">
+                <cellValueFactory>
+                    <PropertyValueFactory property="email"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="tipoColumn" text="Tipo" styleClass="columna-cabecera">
+                <cellValueFactory>
+                    <PropertyValueFactory property="tipo"/>
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+
+    <HBox spacing="15" alignment="CENTER">
+        <Button text="Alta" onAction="#handleAltaUsuario" styleClass="boton-primario"/>
+        <Button text="Baja" onAction="#handleBajaUsuario" styleClass="boton-peligro"/>
+        <Button text="Modificar" onAction="#handleModificarUsuario" styleClass="boton-primario"/>
+        <Button text="Volver" onAction="#handleVolver" styleClass="boton-secundario"/>
+    </HBox>
+
+</VBox>
