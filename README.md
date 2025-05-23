@@ -4,6 +4,31 @@
 
 ---
 
+## 🔧 Instalación del sistema
+
+Antes de comenzar a usar el sistema, debes realizar la instalación siguiendo estos pasos:
+
+1. 📥 **Descarga el proyecto** desde el enlace proporcionado por el equipo de soporte o desde la plataforma correspondiente.
+2. 📂 **Extrae el contenido** del archivo ZIP en una carpeta de tu preferencia.
+3. 📁 Accede a la siguiente ruta dentro de la carpeta extraída:  
+   `out/artifacts/Proyecto3inTechAhmed_jar`
+4. ▶️ Ejecuta el archivo **Ejecutable.bat** haciendo doble clic.
+
+> 📝 *Este archivo inicia la aplicación correctamente con JavaFX. Si ves un error de "JavaFX runtime missing", asegúrate de estar usando el `.bat` proporcionado.*
+
+---
+
+## 1. 👋 ¿Qué es este sistema?
+
+El Sistema de Gestión de Incidencias es una aplicación que permite:
+
+- Reportar problemas técnicos fácilmente.  
+- Hacer seguimiento del estado de los problemas.  
+- Asignar tareas a técnicos para resolverlos.  
+- Gestionar usuarios (clientes, técnicos, administradores).  
+
+---
+
 ## 1. 👋 ¿Qué es este sistema?
 
 El Sistema de Gestión de Incidencias es una aplicación que permite:
