@@ -1,4 +1,4 @@
-# 📘 Guía del Usuario Básico  
+# 📘 Uso de la aplicación  
 **Sistema de Gestión de Incidencias**  
 **Versión 1.0 — 23/05/2025**
 
