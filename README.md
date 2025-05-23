@@ -1,99 +1,171 @@
-# 📋 Sistema de Gestión de Incidencias
-
-**Versión:** 1.0  
-**Desarrollado por:** Proyecto3inTechAhmed  
-**Tecnologías:** Java, JavaFX, Maven, MySQL
+# 📘 Guía del Usuario Básico  
+**Sistema de Gestión de Incidencias**  
+**Versión 1.0 — 23/05/2025**
 
 ---
 
-## 🚀 ¿Qué es este sistema?
+## 1. 👋 ¿Qué es este sistema?
 
-El Sistema de Gestión de Incidencias es una aplicación de escritorio pensada para organizaciones que desean gestionar de manera eficiente los problemas técnicos que ocurren en su entorno.  
-Con este sistema podrás:
+El Sistema de Gestión de Incidencias es una aplicación que permite:
 
-- Reportar fallos técnicos de manera sencilla.
-- Hacer seguimiento de incidencias.
-- Asignar tareas a técnicos especializados.
-- Administrar usuarios del sistema.
+- Reportar problemas técnicos fácilmente.  
+- Hacer seguimiento del estado de los problemas.  
+- Asignar tareas a técnicos para resolverlos.  
+- Gestionar usuarios (clientes, técnicos, administradores).  
 
-Es ideal para **usuarios sin experiencia técnica** gracias a su interfaz clara y guiada.
+### Tipos de usuarios:
 
----
+- **Clientes**: Reportan incidencias (problemas).  
+- **Técnicos**: Atienden y resuelven las incidencias.  
+- **Administradores**: Gestionan usuarios e incidencias.  
 
-## 👤 Tipos de Usuario
-
-### 🛠️ Técnico
-
-- Visualiza las incidencias que se le han asignado.
-- Cambia el estado de la incidencia a **En Progreso** o **Resuelta**.
-- Especifica la solución implementada.
-
-### 👨‍💼 Administrador
-
-- Agrega, edita o elimina usuarios del sistema.
-- Asigna incidencias a los técnicos disponibles.
-- Establece prioridades (**Urgente**, **Normal**, **Baja**).
-- Visualiza y filtra todas las incidencias registradas.
-
-### 👨‍💻 Cliente
-
-- Reporta nuevos problemas técnicos.
-- Describe el fallo y puede adjuntar archivos.
-- Consulta el estado actualizado de sus reportes.
+🔰 *No necesitas conocimientos de informática para utilizarlo. Solo sigue esta guía paso a paso.*
 
 ---
 
-## 🔐 Inicio de Sesión
+## 2. 🔐 ¿Cómo iniciar sesión?
 
-1. Ingresa tu **correo electrónico** registrado.
-2. Introduce tu **contraseña**.
-3. Pulsa el botón **Iniciar Sesión**.
+Cuando abras el programa, verás un formulario con dos campos:
 
-Si aparece un mensaje de error:
+- **Correo electrónico**: Escribe el correo que usaste al registrarte.  
+  *Ejemplo:* `ana.perez@empresa.com`  
+- **Contraseña**: Introduce tu contraseña. Se verá como puntos por seguridad.  
 
-- Verifica que el correo y contraseña estén bien escritos.
-- Si no tienes acceso, contacta al administrador.
+### ¿Qué hacer luego?
 
-🔒 Recomendaciones:
-- No compartas tus credenciales.
-- Cierra sesión al terminar tu uso.
+Haz clic en el botón **"Iniciar sesión"**.
 
----
+### Posibles errores:
 
-## 🧭 Navegación según el tipo de usuario
+- ❌ **Correo o contraseña incorrectos**: Verifica si están bien escritos.  
+- ❌ **Usuario no encontrado**: Contacta con tu administrador.
 
-### Cliente
-- **Nueva Incidencia**: Describe el problema, opcionalmente adjunta archivos.
-- **Mis Incidencias**: Consulta el estado y evolución de tus reportes.
-- **Actualizar**: Refresca la información para ver novedades.
-- **Cerrar Sesión**: Finaliza tu sesión de forma segura.
+### Consejos:
 
-### Administrador
-- **Gestionar Usuarios**: Crear, modificar o eliminar usuarios.
-- **Asignar Incidencias**: Designa un técnico a cada incidencia.
-- **Ver Incidencias**: Revisa todas las incidencias, filtra por estado.
-- **Cerrar Sesión**: Cierra tu cuenta de forma segura.
-
-### Técnico
-- **Incidencias Asignadas**: Lista con detalles de incidencias a resolver.
-- **Resolver Incidencias**: Cambia el estado y documenta la solución.
-- **Actualizar**: Muestra tareas nuevas o cambios recientes.
-- **Cerrar Sesión**: Finaliza la sesión correctamente.
+- Guarda tu contraseña en un lugar seguro.  
+- No dejes tu sesión abierta en ordenadores compartidos.  
+- Si olvidaste tu contraseña, contacta al soporte técnico.
 
 ---
 
-## 🛠️ Requisitos del Sistema
+## 3. 🛠 Área del Administrador
 
-- [Java 23](https://www.oracle.com/java/technologies/javase-downloads.html)
-- [JavaFX 24.0.1](https://openjfx.io/)
-- [Apache Maven](https://maven.apache.org/) (versión 3.8 o superior)
-- MySQL Server (para base de datos)
+### 👤 Gestionar usuarios
+
+- **Crear usuarios**: Añade nuevos técnicos o clientes.  
+- **Editar usuarios existentes**: Cambia nombre, correo, o tipo de cuenta.  
+- **Eliminar usuarios**: Retira cuentas innecesarias.  
+
+### 📝 Asignar incidencias
+
+- Revisa problemas reportados por clientes.  
+- Asigna cada incidencia a un técnico disponible.  
+- Establece su prioridad: **Urgente**, **Normal** o **Baja**.
+
+### 👁 Ver todas las incidencias
+
+Visualiza todas las incidencias registradas, y filtra por estado:
+
+- 🟡 Pendiente  
+- 🔵 En Progreso  
+- ✅ Resuelta  
+
+### 🔓 Cerrar sesión
+
+Haz clic en **Cerrar sesión** al terminar tu jornada.
 
 ---
 
-## ▶️ Cómo ejecutar el proyecto
+## 4. 👤 Área del Cliente
 
-### Opción 1: Usando Maven
+### 🆕 Reportar nueva incidencia
 
-```bash
-mvn clean javafx:run
+- **Descripción del problema**: Explica claramente lo que ocurre.  
+  *Ejemplo:* “La impresora no responde y muestra una luz roja.”  
+- Haz clic en **Enviar** para registrar tu incidencia.
+
+### 📄 Ver mis incidencias
+
+- Consulta tus reportes anteriores en una tabla con:
+  - ID del reporte  
+  - Descripción  
+  - Estado actual: Pendiente / En Progreso / Resuelto  
+
+- Pulsa **Actualizar** para ver cambios recientes.
+
+### 🔓 Cerrar sesión
+
+Siempre cierra sesión al finalizar, especialmente si usas un equipo compartido.
+
+---
+
+## 5. 🧑‍🔧 Área del Técnico
+
+### 📋 Ver incidencias asignadas
+
+Revisa en una tabla los detalles de tus tareas:
+
+- ID de la incidencia  
+- Cliente  
+- Descripción  
+- Fecha  
+- Estado  
+- Solución aplicada  
+
+### ✔ Resolver incidencia
+
+- Cambia el estado a **En Progreso** cuando inicies.  
+- Cambia a **Resuelta** al terminar.  
+- Especifica la solución aplicada.  
+  *Ejemplo:* “Se actualizó el controlador de la impresora y funciona correctamente.”
+
+### 🔄 Actualizar
+
+Haz clic en **Actualizar** para ver nuevas tareas o cambios.
+
+### 🔓 Cerrar sesión
+
+Recuerda cerrar sesión para proteger tu cuenta.
+
+---
+
+## 6. 💡 Consejos útiles
+
+- Usa siempre el botón **Actualizar** en cada vista para ver información al día.
+
+### ¿Tabla vacía?
+
+Posibles causas:
+
+- No hay datos cargados.  
+- No tienes conexión a Internet.  
+- Tu sesión ha caducado (reinicia la aplicación).
+
+### ❗ Problemas comunes
+
+| Problema                   | Solución sugerida                                               |
+|----------------------------|-----------------------------------------------------------------|
+| "JavaFX runtime missing"   | Usa el archivo `.bat` incluido con la aplicación.              |
+| El sistema no carga        | Verifica tu conexión o consulta al soporte técnico.            |
+| No puedo iniciar sesión    | Verifica tu correo y contraseña. Contacta al administrador.    |
+
+---
+
+## 7. 🆘 Contacto de soporte (ficticio)
+
+Si necesitas ayuda, contacta al equipo técnico:
+
+- 📧 **Correo:** [proyecto3intech@gmail.com](mailto:proyecto3intech@gmail.com)  
+- ☎️ **Teléfono:** +34 900 123 456  
+  *Horario: Lunes a Viernes, de 8:00 a 18:00*
+
+---
+
+## 🙌 ¡Gracias por usar nuestro sistema!
+
+Esperamos que esta guía te haya sido útil. Nuestro objetivo es que tu experiencia sea clara, rápida y sencilla.
+
+🌐 Visita nuestro sitio para más información o futuras actualizaciones:  
+[www.proyecto3intech.com](http://www.proyecto3intech.com)
+
+— *Equipo de Desarrollo de Sistema de Incidencias 3inTech*
