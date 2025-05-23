@@ -27,11 +27,11 @@ El Sistema de Gestión de Incidencias es una aplicación que permite:
 
 Cuando abras el programa, verás un formulario con dos campos:
 
-![Captura de pantalla 2025-05-23 084334](https://github.com/user-attachments/assets/e7e12192-2f88-41f2-8f69-555f2bc34716)
+![Captura de pantalla](https://github.com/user-attachments/assets/e7e12192-2f88-41f2-8f69-555f2bc34716)
 
 - **Correo electrónico**: Escribe el correo que usaste al registrarte.  
   *Ejemplo:* `ana.perez@empresa.com`  
-- **Contraseña**: Introduce tu contraseña. Se verá como puntos por seguridad.  
+- **Contraseña**: Introduce tu contraseña. Se mostrará como puntos por seguridad.  
 
 ### ¿Qué hacer luego?
 
@@ -40,12 +40,12 @@ Haz clic en el botón **"Iniciar sesión"**.
 ### Posibles errores:
 
 - ❌ **Correo o contraseña incorrectos**: Verifica si están bien escritos.
-  
-- ![Captura de pantalla 2025-05-23 084529](https://github.com/user-attachments/assets/a2e9a9d2-f236-4796-9afe-0290263cfa23)
 
-- ❌ **Email y contraseña son obligatorios**: Debes introducir un email y una contraseña no puede quedar ningun campo vacío.
-- 
-- ![Captura de pantalla 2025-05-23 084414](https://github.com/user-attachments/assets/88f81855-7b4b-41b4-a1ae-176860f2e367)
+![Error de credenciales](https://github.com/user-attachments/assets/a2e9a9d2-f236-4796-9afe-0290263cfa23)
+
+- ❌ **Email y contraseña son obligatorios**: Debes introducir ambos campos, no puede quedar ninguno vacío.
+
+![Campos obligatorios](https://github.com/user-attachments/assets/88f81855-7b4b-41b4-a1ae-176860f2e367)
 
 ### Consejos:
 
@@ -57,36 +57,35 @@ Haz clic en el botón **"Iniciar sesión"**.
 
 ## 3. 🛠 Área del Administrador
 
-- Email: admin@admin.com
-- Contraseña: admin
+- Email: `admin@admin.com`  
+- Contraseña: `admin`  
 
-![Captura de pantalla 2025-05-23 084648](https://github.com/user-attachments/assets/a0b63294-57f6-4121-8d32-8216e5c9e45a)
+![Área administrador](https://github.com/user-attachments/assets/a0b63294-57f6-4121-8d32-8216e5c9e45a)
 
 ### 👤 Gestionar usuarios
 
-![Captura de pantalla 2025-05-23 084721](https://github.com/user-attachments/assets/45c23ec9-abd9-483e-955b-4192ca3561a4)
+![Gestión de usuarios](https://github.com/user-attachments/assets/45c23ec9-abd9-483e-955b-4192ca3561a4)
 
-- **Dar de dalta nuevos usuarios**: Añade nuevos técnicos o clientes.  
-- **Modificar usuarios existentes**: Cambia nombre, correo, o tipo de cuenta.  
-- **Dar de baja usuarios**: Eliminar cuentas.
+- **Dar de alta nuevos usuarios**: Añade nuevos técnicos o clientes.  
+- **Modificar usuarios existentes**: Cambia nombre, correo o tipo de cuenta.  
+- **Dar de baja usuarios**: Elimina cuentas.
 
- El funcionamiento es sencillo solo basta con seleccionar un usuario de la lista y darle al botón que queramos.
+Selecciona un usuario de la lista y haz clic en el botón correspondiente.
 
 ### 📝 Asignar incidencias
 
-![image](https://github.com/user-attachments/assets/39240ce9-3994-42e8-be51-4362c32a48dc)
+![Asignar incidencias](https://github.com/user-attachments/assets/39240ce9-3994-42e8-be51-4362c32a48dc)
 
 - Revisa problemas reportados por clientes.  
 - Asigna cada incidencia a un técnico disponible.
 
-Debemos introducir el id de la incidencia que deseamos asignar y podemos darle al botón de buscar incidencia para ver si existe o no y posteriormente debemos introducir el email del técnico al que deseamos asignarle la incidencia, también podemos darle a "Buscar Técnico" para comprobar que existe. Una vez hecho esos pasos le damos a "Asignar Incidencia".
+Introduce el ID de la incidencia, pulsa **Buscar incidencia** para verificar que existe. Luego, introduce el email del técnico y pulsa **Buscar técnico**. Finalmente, haz clic en **Asignar Incidencia**.
 
 ### 👁 Ver todas las incidencias
 
-![image](https://github.com/user-attachments/assets/bf7161ee-b258-44b3-ade9-c1e1195f319b)
+![Ver incidencias](https://github.com/user-attachments/assets/bf7161ee-b258-44b3-ade9-c1e1195f319b)
 
-
-Visualiza todas las incidencias registradas, y filtra por estado:
+Visualiza todas las incidencias registradas y filtra por estado:
 
 - 🟡 Pendiente  
 - 🔵 En Progreso  
@@ -94,61 +93,62 @@ Visualiza todas las incidencias registradas, y filtra por estado:
 
 ### 🔓 Cerrar sesión
 
-Haz clic en **Cerrar sesión** al terminar tu jornada.
+Haz clic en **Cerrar sesión** al finalizar tu jornada.
 
 ---
 
 ## 4. 👤 Área del Cliente
 
-![image](https://github.com/user-attachments/assets/2b9a8412-2270-4344-8e48-3a8bc718bd1e)
+![Área cliente](https://github.com/user-attachments/assets/2b9a8412-2270-4344-8e48-3a8bc718bd1e)
 
 ### 🆕 Reportar nueva incidencia
 
-![image](https://github.com/user-attachments/assets/0dd0c3e9-425e-425e-ae54-cef4cfdd83ba)
+![Reportar incidencia](https://github.com/user-attachments/assets/0dd0c3e9-425e-425e-ae54-cef4cfdd83ba)
 
 - **Descripción del problema**: Explica claramente lo que ocurre.  
-  *Ejemplo:* “Al iniciar sesión el programa se queda en blanco y se cierra.”  
+  *Ejemplo:* “Al iniciar sesión, el programa se queda en blanco y se cierra.”  
 - Haz clic en **Crear** para registrar tu incidencia.
 
 ### 📄 Ver mis incidencias
 
-- Consulta tus reportes anteriores en una tabla con:
-  - ID del reporte  
-  - Descripción  
-  - Estado actual: Pendiente / En Progreso / Resuelto  
+Consulta tus reportes anteriores en una tabla con:
 
-- Pulsa **Actualizar** para ver cambios recientes.
+- ID del reporte  
+- Descripción  
+- Estado actual: Pendiente / En Progreso / Resuelto  
+
+Pulsa **Actualizar** para ver los cambios recientes.
 
 ### 🔓 Cerrar sesión
 
-Siempre cierra sesión al finalizar, especialmente si usas un equipo compartido.
+Cierra sesión siempre al finalizar, especialmente si usas un equipo compartido.
 
 ---
 
 ## 5. 🧑‍🔧 Área del Técnico
 
-![image](https://github.com/user-attachments/assets/7af2f091-43e6-4fe5-bca0-0e4ba3c5808c)
+![Área técnico](https://github.com/user-attachments/assets/7af2f091-43e6-4fe5-bca0-0e4ba3c5808c)
 
 ### 📋 Ver incidencias asignadas
 
-Revisa en una tabla los detalles de tus tareas:
+Revisa los detalles de tus tareas:
 
 - ID de la incidencia  
 - Cliente  
 - Descripción  
-- Fecha de creacion
-- Fecha de solucion  
+- Fecha de creación  
+- Fecha de solución  
 - Estado  
 - Solución aplicada  
 
 ### ✔ Resolver incidencia
 
-![image](https://github.com/user-attachments/assets/55b1b4f0-941f-4164-8a78-a67301d435c5)
+![Resolver incidencia](https://github.com/user-attachments/assets/55b1b4f0-941f-4164-8a78-a67301d435c5)
 
-- Cambia el estado a **En Progreso** cuando inicies.  
-- Cambia a **Resuelta** al terminar.  
+- Cambia el estado a **En Progreso** al iniciar.  
+- Cambia a **Resuelta** al finalizar.  
 - Especifica la solución aplicada.  
-  *Ejemplo:* “Se ha restablecido la conexion a base de datos para el logeo de usuarios.”
+  *Ejemplo:* “Se ha restablecido la conexión a la base de datos para el inicio de sesión de usuarios.”
 
 ### 🔄 Actualizar
 
@@ -162,7 +162,7 @@ Recuerda cerrar sesión para proteger tu cuenta.
 
 ## 6. 💡 Consejos útiles
 
-- Usa siempre el botón **Actualizar** en cada vista para ver información al día.
+- Usa siempre el botón **Actualizar** en cada vista para ver información actualizada.
 
 ### ¿Tabla vacía?
 
@@ -199,4 +199,4 @@ Esperamos que esta guía te haya sido útil. Nuestro objetivo es que tu experien
 🌐 Visita nuestro sitio para más información o futuras actualizaciones:  
 [www.proyecto3intech.com](http://www.proyecto3intech.com)
 
-— *Equipo de Desarrollo de Sistema de Incidencias 3inTech*
+— *Equipo de Desarrollo del Sistema de Incidencias 3inTech*
