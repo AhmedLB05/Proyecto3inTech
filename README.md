@@ -9,10 +9,18 @@
 Antes de comenzar a usar el sistema, debes realizar la instalación siguiendo estos pasos:
 
 1. 📥 **Descarga el proyecto** desde el enlace proporcionado por el equipo de soporte o desde la plataforma correspondiente.
-2. 📂 **Extrae el contenido** del archivo ZIP en una carpeta de tu preferencia.
-3. 📁 Accede a la siguiente ruta dentro de la carpeta extraída:  
-   `out/artifacts/Proyecto3inTechAhmed_jar`
-4. ▶️ Ejecuta el archivo **Ejecutable.bat** haciendo doble clic.
+   
+   ![image](https://github.com/user-attachments/assets/40e49b1c-47f4-4664-b757-2cc1440c27c1)
+
+3. 📂 **Extrae el contenido** del archivo ZIP en una carpeta de tu preferencia.
+
+   ![image](https://github.com/user-attachments/assets/3ad4ba39-5a26-418f-95a7-f7decc1b8a13)
+   
+5. 📁 Accede a la siguiente ruta dentro de la carpeta extraída:  
+   `\Proyecto3inTech-master\out\artifacts\Proyecto3inTechAhmed_jar`
+6. ▶️ Ejecuta el archivo **Ejecutable.bat** haciendo doble clic.
+
+   ![image](https://github.com/user-attachments/assets/69b60bf2-27ee-4aac-99b7-82291e7e2cc4)
 
 > 📝 *Este archivo inicia la aplicación correctamente con JavaFX. Si ves un error de "JavaFX runtime missing", asegúrate de estar usando el `.bat` proporcionado.*
 
